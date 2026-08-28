@@ -138,7 +138,7 @@
     "jump": "assets/jump.mp3",
     "hit": "assets/hit.mp3",
     "collect": "assets/collect.mp3",
-    "destroy": "assets/Destroy.mp3",
+    "destroy": "assets/destroy.mp3",
     "game_over": "assets/lose.mp3",
     "level_complete": "assets/win.mp3",
     "attack": "assets/attack.mp3"

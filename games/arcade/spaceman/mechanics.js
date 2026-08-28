@@ -32,7 +32,6 @@ class GameScene extends Phaser.Scene {
     preload() {
         const basePath = import.meta.url.substring(0, import.meta.url.lastIndexOf('/'));
         this.load.json('levelConfig', `${basePath}/config.json`);
-        this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
 
         this.load.once('filecomplete-json-levelConfig', () => {
             const cfg = this.cache.json.get('levelConfig');
@@ -132,16 +131,7 @@ class GameScene extends Phaser.Scene {
         });
 
 
-        window.WebFont.load({
-            custom: {
-                families: ['Outfit'],
-                urls: ['outfit.ttf']
-            },
-            active: () => {
-                // Show "How to Play" popup and pause scene updates
-                addHTPPopup(this);
-            }
-        });
+        addHTPPopup(this);
 
         this.input.on('pointerdown', (pointer) => {
             if (this.isGameOver) return;

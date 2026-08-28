@@ -93,7 +93,7 @@ function applyConfig(){
   bgm.src=audio.bgm; bgm.loop=true; bgm.volume=0.4;
   sfxSwipe.src=audio.swipe;
   sfxKill.src=audio.kill;
-  sfxGameOver.src=audio.gameover;
+  if(audio.gameover)sfxGameOver.src=audio.gameover;
 
   playerImg.src=images.player;
   enemyImg.src=images.enemy;
@@ -269,7 +269,7 @@ function startGame(){
   resetGame();playing=true;
 }
 function winGame(){playing=false;document.getElementById("winOverlay").style.display="flex";}
-function lose(){playing=false;sfxGameOver.play();document.getElementById("loseOverlay").style.display="flex";}
+function lose(){playing=false;if(sfxGameOver.src)sfxGameOver.play();document.getElementById("loseOverlay").style.display="flex";}
 function restart(){
   document.getElementById("winOverlay").style.display="none";
   document.getElementById("loseOverlay").style.display="none";

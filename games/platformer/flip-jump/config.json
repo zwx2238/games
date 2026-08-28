@@ -47,7 +47,7 @@
     "replay_level": "assets/replay_level.png"
   },
   "audio": {
-    "bgm": "https://games.chaoswale.in/temporary_sounds/Hk29ZlCQGNRZQGUhRrA1Nr8M7ig1/chlao.mp3",
+    "bgm": "assets/bgm.mp3",
     "bomb": "assets/bomb.mp3"
   },
   "spritesheets": {

@@ -73,7 +73,7 @@
   "audio": {
     "bgm": "assets/bgm.mp3",
     "attack": "assets/Attack.mp3",
-    "collect": "assets/Collect.mp3",
+    "collect": "assets/collect.mp3",
     "hit": "assets/hit.mp3",
     "destroy": "assets/Explosion.mp3",
     "win": "assets/win.mp3",

@@ -56,7 +56,7 @@
   "audio": {
     "bgm": "assets/bgm.mp3",
     "attack": "assets/Attack.mp3",
-    "collect": "assets/Collect.mp3",
+    "collect": "assets/collect.mp3",
     "explosion": "assets/Explosion.mp3",
     "gameover": "assets/lose.mp3",
     "hit": "assets/hit.mp3",
