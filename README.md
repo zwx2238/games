@@ -202,3 +202,7 @@ You're free to fork, remix, and ship. Attribution appreciated, not required.
 If this collection made you smile, [**give it a ⭐**](https://github.com/sausi-7/games/stargazers) — it genuinely helps it reach more people.
 
 </div>
+
+## Self-hosted runtime assets
+
+Phaser, Three.js and Web Font Loader are pinned to the versions originally used by each game and served from local `vendor/` directories. `vendored-runtime-assets.json` records npm package integrity, asset SHA-256 values, references and included upstream licenses. Each directory is independently deployable; no game logic or engine versions change. Existing Google font stylesheets and the GSAP CDN reference retain their original network behavior.

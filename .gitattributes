@@ -1,0 +1,2 @@
+# Preserve exact verified upstream runtime bytes in independently served games.
+games/**/vendor/* -text whitespace=cr-at-eol

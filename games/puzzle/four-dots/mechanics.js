@@ -63,7 +63,7 @@ export default class MechanicsScene extends Phaser.Scene {
         this.load.audio(key, joinPath(url));
       }
 
-      this.load.script("webfont", "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js");
+      this.load.script("webfont", "./vendor/webfontloader-1.6.26.min.js");
       this.load.start();
     };
 
